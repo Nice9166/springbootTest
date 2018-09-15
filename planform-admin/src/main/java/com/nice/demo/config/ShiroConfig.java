@@ -1,5 +1,8 @@
 package com.nice.demo.config;
 
+import com.nice.demo.core.shiro.ShiroRealm;
+import com.nice.demo.web.filter.SysAccessControllerFilter;
+import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;

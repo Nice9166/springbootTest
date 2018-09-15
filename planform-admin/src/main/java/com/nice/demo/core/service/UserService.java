@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @program: springbootTest
@@ -31,5 +32,13 @@ public class UserService {
 
     public List<UserInfo> selelctByNickName(String nickName){
         return userRepoistory.selelctByNickName(nickName);
+    }
+
+    public Set<String> getRoles(String username) {
+        return null;
+    }
+
+    public Set<String> getPermissions(String username) {
+        return null;
     }
 }
