@@ -1,4 +1,4 @@
-package com.nice.demo.util;
+package com.nice.core.bean;
 
 import io.swagger.annotations.ApiParam;
 import lombok.Data;

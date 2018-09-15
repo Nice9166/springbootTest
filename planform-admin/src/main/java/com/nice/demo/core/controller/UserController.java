@@ -1,6 +1,6 @@
-package com.nice.demo.controller;
+package com.nice.demo.core.controller;
 
-import com.nice.demo.bean.User;
+import com.nice.core.bean.UserInfo;
 import io.swagger.annotations.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -28,7 +28,7 @@ public class UserController {
     })
     @RequestMapping(value = "/login",method = {RequestMethod.POST, RequestMethod.GET})
     @ResponseBody
-    public ModelMap login(User user, HttpServletRequest request){
+    public ModelMap login(UserInfo userInfo, HttpServletRequest request){
         return new ModelMap("msg",200);
     }
 }

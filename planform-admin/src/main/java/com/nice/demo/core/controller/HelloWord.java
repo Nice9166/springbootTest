@@ -1,4 +1,4 @@
-package com.nice.demo.controller;
+package com.nice.demo.core.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,5 +17,10 @@ public class HelloWord {
     @GetMapping("/hello")
     public String hell(){
         return "hello";
+    }
+
+    @GetMapping("/login")
+    public String login(){
+        return "login";
     }
 }

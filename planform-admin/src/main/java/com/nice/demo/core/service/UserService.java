@@ -1,11 +1,10 @@
-package com.nice.demo.service;
+package com.nice.demo.core.service;
 
-import com.nice.demo.bean.User;
-import com.nice.demo.repoistory.UserRepoistory;
+import com.nice.core.bean.UserInfo;
+import com.nice.core.dao.repository.admin.UserRepoistory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 
@@ -21,16 +20,16 @@ public class UserService {
     @Autowired
     private UserRepoistory userRepoistory;
 
-    public User save(User user){
-        user.setCreateTime(new Date());
-        return userRepoistory.save(user);
+    public UserInfo save(UserInfo userInfo){
+        userInfo.setCreateTime(new Date());
+        return userRepoistory.save(userInfo);
     }
 
-    public User findByUserName(String userName){
+    public UserInfo findByUserName(String userName){
          return userRepoistory.findByUserName(userName);
     }
 
-    public List<User> selelctByNickName(String nickName){
+    public List<UserInfo> selelctByNickName(String nickName){
         return userRepoistory.selelctByNickName(nickName);
     }
 }

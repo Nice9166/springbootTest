@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/planform-admin/planform-admin.iml" filepath="$PROJECT_DIR$/planform-admin/planform-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/planform-core/planform-core.iml" filepath="$PROJECT_DIR$/planform-core/planform-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model/planform-model.iml" filepath="$PROJECT_DIR$/model/planform-model.iml" />
     </modules>
   </component>
 </project>
